@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indonesian Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    header, nav, section {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2ca3cb;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2ca3cb;
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="video-background">
+    <source src="D:\DATA UNPAM\Semester 5\Pemograman Web\UAS_Pemograman Web 1_Wahyu Hidayat_211011450443_05TPLE003\images\Bali.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <header>
+    <h1>Indonesian Tourism</h1>
+  </header>
+  <nav>
+    <a href="#culture">Culture</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <section id="culture">
+      <h2>Culture of Indonesia</h2>
+      <p>Indonesia is known for its rich and diverse culture. Some notable cultural aspects include:</p>
+      <ul>
+        <li><strong>Tari Kecak</strong>: A traditional Balinese dance accompanied by a chorus of chanting men.</li>
+        <img src="images/Tari Kecak.jpeg" alt="Tari Kecak" class="responsive-img">
+        <li><strong>Upacara Ngaben</strong>: A Balinese Hindu cremation ceremony that is both solemn and festive.</li>
+        <img src="images/Upacara Ngaben.jpeg" alt="Upacara Ngaben" class="responsive-img">
+        <li><strong>Wayang Kulit</strong>: Traditional Javanese shadow puppetry that tells ancient epic stories.</li>
+        <img src="images/Wayang Kulit.jpeg" alt="Wayang Kulit" class="responsive-img">
+      </ul>
+    </section>
+
+    <section id="destinations">
+      <h2>Top Tourist Destinations in Indonesia</h2>
+      <ul>
+        <li><strong>Bali</strong>: Famous for its beautiful beaches, vibrant nightlife, and rich culture.</li>
+        <img src="images/bali.jpeg" alt="Bali" class="responsive-img">
+        <li><strong>Yogyakarta</strong>: Known for its traditional arts and cultural heritage, including the famous Borobudur Temple.</li>
+        <img src="images/Yogyakarta.jpeg" alt="Yogyakarta" class="responsive-img">
+        <li><strong>Raja Ampat</strong>: A paradise for divers with its stunning underwater biodiversity.</li>
+        <img src="images/Raja Ampat.jpeg" alt="Raja Ampat" class="responsive-img">
+      </ul>
+    </section>
+
+    <section id="hotels">
+      <h2>Favorite Hotels in Indonesia</h2>
+      <ul>
+        <li><strong>Hotel Bali Paradise</strong></li>
+        <img src="images/Hotel Bali Paradise.jpeg" alt="Bali Paradise" class="responsive-img">
+        <li><strong>Yogyakarta Heritage Hotel</strong></li>
+        <img src="images/Yogyakarta Heritage Hotel.jpeg" alt="Yogyakarta Heritage Hotel" class="responsive-img">
+        <li><strong>Raja Ampat Dive Resort</strong></li>
+        <img src="images/Raja Ampat Dive Resort.jpeg" alt="Raja Ampat Dive Resort" class="responsive-img">
+      </ul>
+
+      <table>
+        <tr>
+          <th>Hotel</th>
+          <th>Location</th>
+          <th>Price (per night)</th>
+          <th>Facilities</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>Hotel Bali Paradise</td>
+          <td>Bali</td>
+          <td>$100</td>
+          <td>Pool, Spa, Free Wi-Fi</td>
+          <td><button><a href="https://www.baliparadisehotel.com">Book Now</a></button></td>
+        </tr>
+        <tr>
+          <td>Yogyakarta Heritage Hotel</td>
+          <td>Yogyakarta</td>
+          <td>$80</td>
+          <td>Free Breakfast, Gym, Free Wi-Fi</td>
+          <td><button><a href="https://www.traveloka.com/id-id/hotel/indonesia/hotel-indies-heritage-prawirotaman-3000010008542">Book Now</a></button></td>
+        </tr>
+        <tr>
+          <td>Raja Ampat Dive Resort</td>
+          <td>Raja Ampat</td>
+          <td>$150</td>
+          <td>Diving Packages, Free Wi-Fi</td>
+          <td><button><a href="https://rajaampatdiveresort.co.id/">Book Now</a></button></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For more information, please contact us at <a href="mailto:info@indonesiantourism.com">info@indonesiantourism.com</a>.</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
